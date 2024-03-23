@@ -1,0 +1,511 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<main>
+    <div class="sidebar-menu-wrapper">
+        <div class="mobile_sidebar_menu">
+            <button type="button" class="close_btn">
+                <i class="fal fa-times"></i>
+            </button>
+            <div class="about_content mb_60">
+                <div class="brand_logo mb_15">
+                    <a href="index.html">
+                        <img src="~/images/logo/logo_01_1x.png"
+                             srcset="~/images/logo/logo_01_2x.png 2x"
+                             alt="logo_not_found" />
+                    </a>
+                </div>
+                <p class="mb-0">
+                    Nullam id dolor auctor, dignissim magna eu, mattis ante.
+                    Pellentesque tincidunt, elit a facilisis efficitur, nunc nisi
+                    scelerisque enim, rhoncus malesuada est velit a nulla. Cras porta
+                    mi vitae dolor tristique euismod. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit
+                </p>
+            </div>
+            <div class="menu_list mb_60 clearfix">
+                <h3 class="title_text text-white">Menu List</h3>
+                <ul class="ul_li_block clearfix">
+                    <li class="active dropdown">
+                        <a href="#!"
+                           data-toggle="dropdown"
+                           aria-haspopup="true"
+                           aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index_1.html">Home Page V.1</a></li>
+                            <li><a href="index_2.html">Home Page V.2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Our Cars</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#!"
+                           data-toggle="dropdown"
+                           aria-haspopup="true"
+                           aria-expanded="false">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service.html">Our Service</a></li>
+                            <li><a href="gallery.html">Car Gallery</a></li>
+                            <li><a href="account.html">My Account</a></li>
+                            <li><a href="reservation.html">Reservation</a></li>
+                            <li class="dropdown">
+                                <a href="#!"
+                                   data-toggle="dropdown"
+                                   aria-haspopup="true"
+                                   aria-expanded="false">Blogs</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="blog_details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#!"
+                                   data-toggle="dropdown"
+                                   aria-haspopup="true"
+                                   aria-expanded="false">Our Cars</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="car.html">Cars</a></li>
+                                    <li><a href="car_details.html">Car Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="cart.html">Shopping Cart</a></li>
+                            <li><a href="faq.html">F.A.Q.</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#!"
+                           data-toggle="dropdown"
+                           aria-haspopup="true"
+                           aria-expanded="false">Contact Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="contact.html">Contact Default</a></li>
+                            <li><a href="contact_wordwide.html">Contact Wordwide</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="booking_car_form">
+                <h3 class="title_text text-white mb-2">Book A Car</h3>
+                <p class="mb_15">
+                    Nullam id dolor auctor, dignissim magna eu, mattis ante.
+                    Pellentesque tincidunt, elit a facilisis efficitur.
+                </p>
+                <form action="#">
+                    <div class="form_item">
+                        <h4 class="input_title text-white">Pick Up Location</h4>
+                        <div class="position-relative">
+                            <input id="location_one"
+                                   type="text"
+                                   name="location"
+                                   placeholder="City, State or Airport Code" />
+                            <label for="location_one" class="input_icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </label>
+                        </div>
+                    </div>
+                   
+                    <button type="submit"
+                            class="custom_btn bg_default_red btn_width text-uppercase">
+                        Book A Car
+                        <img src="~/images/icons/icon_01.png"
+                             alt="icon_not_found" />
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <section class="breadcrumb_section text-center clearfix">
+        <div class="page_title_area has_overlay d-flex align-items-center clearfix"
+             data-bg-image="~/images/breadcrumb/bg_01.jpg">
+            <div class="overlay"></div>
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <h1 class="page_title text-white mb-0">Our cars</h1>
+            </div>
+        </div>
+        <div class="breadcrumb_nav clearfix" data-bg-color="#F2F2F2">
+            <div class="container">
+                <ul class="ul_li clearfix">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Our Cars</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="car_section sec_ptb_100 clearfix">
+        <div class="container">
+            <div class="row justify-content-lg-between justify-content-md-center justify-content-sm-center">
+                <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+                    <aside class="filter_sidebar sidebar_section"
+                           data-bg-color="#F2F2F2">
+                        <div class="sidebar_header"
+                             data-bg-gradient="linear-gradient(90deg, #0C0C0F, #292D45)">
+                            <h3 class="text-white mb-0">Filters</h3>
+                        </div>
+                        <div class="sb_widget">
+                            <form action="~/Cars/FilterCars" method="post">
+                               
+                                
+                                    <div class="position-relative">
+                                        <select id="location_one" name="Location">
+                                            <option value="">Şehir Seçin</option>
+                                            <option value="İstanbul">İstanbul</option>
+                                            <option value="Ankara">Ankara</option>
+                                            <option value="Kastamonu">Kastamonu</option>
+                                            <option value="Sakarya">Sakarya</option>
+                                           
+                                        </select>
+                                        <label for="location_one" class="input_icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </label>
+                                    </div>
+
+                                    
+                                
+                                <div class="sb_widget"
+                                     data-aos="fade-up"
+                                     data-aos-delay="100">
+                                    <div class="checkbox_input">
+                                       
+                                    </div>
+                                </div>
+                                <div class="sb_widget"
+                                     data-aos="fade-up"
+                                     data-aos-delay="100">
+                                    <h4 class="input_title">Number of passengers:</h4>
+                                    <div class="row">
+                                        <!-- Boş Seçenek -->
+                                        <div class="col-lg-6">
+                                            <div class="checkbox_input">
+                                                <label for="passengers_radio0">
+                                                    <input type="radio"
+                                                           id="passengers_radio0"
+                                                           name="Passengers"
+                                                           checked="checked" />
+                                                    Seçim Yapılmadı
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- Diğer Seçenekler -->
+                                        <div class="col-lg-6">
+                                            <div class="checkbox_input">
+                                                <label for="passengers_radio1">
+                                                    <input type="radio"
+                                                           id="passengers_radio1"
+                                                           name="Passengers"
+                                                           value="2" />
+                                                    2
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="checkbox_input">
+                                                <label for="passengers_radio2">
+                                                    <input type="radio"
+                                                           id="passengers_radio2"
+                                                           name="Passengers"
+                                                           value="5" />
+                                                    5
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="checkbox_input">
+                                                <label for="passengers_radio3">
+                                                    <input type="radio"
+                                                           id="passengers_radio3"
+                                                           name="Passengers"
+                                                           value="4" />
+                                                    4
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="checkbox_input">
+                                                <label for="passengers_radio4">
+                                                    <input type="radio"
+                                                           id="passengers_radio4"
+                                                           name="Passengers"
+                                                           value="7" />
+                                                    7 or more
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="sb_widget"
+                                     data-aos="fade-up"
+                                     data-aos-delay="100">
+                                    <div class="form_item">
+                                        <select name="FuelType">
+                                            <option value="" >Yakıt Tipi</option>
+                                            <option value="Dizel">Dizel</option>
+                                            <option value="Benzinli">Benzinli</option>
+                                        </select>
+                                    </div>
+                                   
+                                 
+                                </div>
+                               
+                                <hr data-aos="fade-up" data-aos-delay="100" />
+                                <div data-aos="fade-up" data-aos-delay="100">
+                                    <button type="submit"
+                                            class="custom_btn bg_default_red text-uppercase">
+                                        Apply Filters
+                                        <img src="~/images/icons/icon_01.png"
+                                             alt="icon_not_found" />
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
+                    <div class="item_shorting clearfix"
+                         data-aos="fade-up"
+                         data-aos-delay="100">
+                        
+                    </div>
+                    <div id="carListContainer" class="row">
+                        @foreach (var car in Model)
+                        {
+                            <div class="col-lg-6 col-md-6">
+                                <div class="feature_vehicle_item" data-aos="fade-up" data-aos-delay="100">
+                                    <h3 class="item_title mb-0">
+                                        <a asp-action="Details" asp-controller="Cars" asp-route-id="@car.Id">@car.Name</a>
+                                    </h3>
+                                    <div class="item_image position-relative">
+                                        <a class="image_wrap" asp-action="Details" asp-controller="Cars" asp-route-id="@car.Id">
+                                            <img src="@car.ImageUrl" alt="image_not_found" />
+                                        </a>
+                                        <span class="item_price bg_default_blue"> &#8378;@car.PricePerDay/Gün</span>
+                                    </div>
+                                    <ul class="info_list ul_li_center clearfix">
+                                        <li>@car.Category</li>
+                                        <li>@car.Transmission</li>
+                                        <li>@car.Passengers Kişilik</li>
+                                        <li>@car.FuelType</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        }
+                   </div>
+                    <div class="pagination_wrap clearfix"
+                         data-aos="fade-up"
+                         data-aos-delay="100">
+                        <div class="row align-items-center justify-content-lg-between">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <span class="page_number">Page 1 of 3</span>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <ul class="pagination_nav ul_li_right clearfix">
+                                    <li>
+                                        <a href="#!">
+                                            <i class="fal fa-angle-double-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="active"><a href="#!">1</a></li>
+                                    <li><a href="#!">2</a></li>
+                                    <li><a href="#!">3</a></li>
+                                    <li>
+                                        <a href="#!">
+                                            <i class="fal fa-angle-double-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="world_location_section sec_ptb_100 clearfix"
+             data-bg-gradient="linear-gradient(0deg, #161829, #292D45)">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-9 col-sm-12 col-xs-12">
+                    <div class="section_title mb_60 text-center text-white"
+                         data-aos="fade-up"
+                         data-aos-delay="100">
+                        <h2 class="title_text text-white mb_15">
+                            <span>Worldwide Car Retal Locations</span>
+                        </h2>
+                        <p class="mb-0">
+                            We have a number of convenient locations. More than 500
+                            Stations in 90+ Countries Worldwide
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="world_location clearfix">
+                <form action="#">
+                    <div class="row" data-aos="fade-up" data-aos-delay="300">
+                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                            <div class="form_item mb-0">
+                                <input id="world_location_search"
+                                       type="search"
+                                       name="search"
+                                       placeholder="Search for a Country" />
+                                <label for="world_location_search" class="input_icon">
+                                    <i class="fal fa-search"></i>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                            <button type="submit"
+                                    class="custom_btn bg_default_red text-uppercase">
+                                Search Location
+                                <img src="~/images/icons/icon_01.png"
+                                     alt="icon_not_found" />
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="map_wrap position-relative"
+                     data-aos="fade-up"
+                     data-aos-delay="500">
+                    <div id="mapBox"
+                         data-lat="40.701083"
+                         data-lon="-74.1522848"
+                         data-zoom="14"
+                         data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
+                         data-mlat="40.701083"
+                         data-mlon="-74.1522848"></div>
+                    <div class="location_content">
+                        <h4>Marseille Seaport</h4>
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i> Chemin du Littoral,
+                            Porte 4, Marseille
+                        </p>
+                        <p>Office opening hours: <span>MON-SAT: 9:00am-9:00pm</span></p>
+                        <div class="save_btn">
+                            <a href="#"><i class="fas fa-envelope"></i> Save for Later</a>
+                        </div>
+                        <a class="text_btn text-uppercase" href="#!">
+                            <span>View All Offers</span>
+                            <img src="~/images/icons/icon_02.png"
+                                 alt="icon_not_found" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cars_section sec_ptb_100 clearfix">
+        <div class="offers_car_carousel slideshow4_slider"
+             data-aos="fade-up"
+             data-aos-delay="100">
+            <div class="item">
+                <div class="gallery_fullimage_2">
+                    <img src="~/images/gallery/img_03.jpg"
+                         alt="image_not_found" />
+                    <div class="item_content text-white">
+                        <span class="item_price bg_default_blue">$670/Day</span>
+                        <h3 class="item_title text-white">
+                            Phasellus porta pulvinar metus
+                        </h3>
+                        <a class="text_btn text-uppercase" href="#!">
+                            <span>Kook A Car</span>
+                            <img src="~/images/icons/icon_02.png"
+                                 alt="icon_not_found" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="gallery_fullimage_2">
+                    <img src="~/images/gallery/img_04.jpg"
+                         alt="image_not_found" />
+                    <div class="item_content text-white">
+                        <span class="item_price bg_default_blue">$670/Day</span>
+                        <h3 class="item_title text-white">
+                            Phasellus porta pulvinar metus
+                        </h3>
+                        <a class="text_btn text-uppercase" href="#!">
+                            <span>Kook A Car</span>
+                            <img src="~/images/icons/icon_02.png"
+                                 alt="icon_not_found" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="gallery_fullimage_2">
+                    <img src="~/images/gallery/img_05.jpg"
+                         alt="image_not_found" />
+                    <div class="item_content text-white">
+                        <span class="item_price bg_default_blue">$670/Day</span>
+                        <h3 class="item_title text-white">
+                            Phasellus porta pulvinar metus
+                        </h3>
+                        <a class="text_btn text-uppercase" href="#!">
+                            <span>Kook A Car</span>
+                            <img src="~/images/icons/icon_02.png"
+                                 alt="icon_not_found" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="gallery_fullimage_2">
+                    <img src="~/images/gallery/img_06.jpg"
+                         alt="image_not_found" />
+                    <div class="item_content text-white">
+                        <span class="item_price bg_default_blue">$670/Day</span>
+                        <h3 class="item_title text-white">
+                            Phasellus porta pulvinar metus
+                        </h3>
+                        <a class="text_btn text-uppercase" href="#!">
+                            <span>Kook A Car</span>
+                            <img src="~/images/icons/icon_02.png"
+                                 alt="icon_not_found" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="gallery_fullimage_2">
+                    <img src="~/images/gallery/img_03.jpg"
+                         alt="image_not_found" />
+                    <div class="item_content text-white">
+                        <span class="item_price bg_default_blue">$670/Day</span>
+                        <h3 class="item_title text-white">
+                            Phasellus porta pulvinar metus
+                        </h3>
+                        <a class="text_btn text-uppercase" href="#!">
+                            <span>Kook A Car</span>
+                            <img src="~/images/icons/icon_02.png"
+                                 alt="icon_not_found" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+    $(document).ready(function() {
+        $('form').on('submit', function(e) {
+            e.preventDefault();
+            $.ajax({
+                url: '/Car/FilterCars',
+                type: 'POST',
+                data: $(this).serialize(),
+                success: function(result) {
+                    // Burada filtrelenmiş araçları gösterme işlemi
+                }
+            });
+        });
+    });
+    success: function(result) {
+        $('#carListContainer').html(result); // 'result' içeriği, sayfadaki bir elemana yerleştirilir
+    }
+
+</script>

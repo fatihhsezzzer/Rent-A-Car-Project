@@ -1,0 +1,713 @@
+﻿@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+@model IEnumerable<RentACar.Models.CarModels.Car>
+
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Home V.2 - Rotors - Car Rental HTML5 Template</title>
+    <link rel="shortcut icon" href="~/images/logo/favourite_icon.png" />
+    
+    <link rel="stylesheet" href="~/css/plugins.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="~/css/fontawesome.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/aos.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/slick-theme.css" />
+    <link rel="stylesheet"
+          type="text/css"
+          href="~/css/magnific-popup.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/nice-select.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/style.css" />
+</head>
+<body>
+    <div class="mt-0">
+        <div class="sidebar-menu-wrapper">
+            <div class="mobile_sidebar_menu">
+                <button type="button" class="close_btn">
+                    <i class="fal fa-times"></i>
+                </button>
+                <div class="about_content mb_60">
+                    <div class="brand_logo mb_15">
+                        <a href="index.html">
+                            <img src="~/images/logo/logo_01_1x.png"
+                                 srcset="~/images/logo/logo_01_2x.png 2x"
+                                 alt="logo_not_found" />
+                        </a>
+                    </div>
+                    <p class="mb-0">
+                        Nullam id dolor auctor, dignissim magna eu, mattis ante.
+                        Pellentesque tincidunt, elit a facilisis efficitur, nunc nisi
+                        scelerisque enim, rhoncus malesuada est velit a nulla. Cras porta
+                        mi vitae dolor tristique euismod. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit
+                    </p>
+                </div>
+                <div class="menu_list mb_60 clearfix">
+                    <h3 class="title_text text-white">Menu List</h3>
+                    <ul class="ul_li_block clearfix">
+                        <li class="active dropdown">
+                            <a href="#!"
+                               data-toggle="dropdown"
+                               aria-haspopup="true"
+                               aria-expanded="false">Home</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index_1.html">Home Page V.1</a></li>
+                                <li><a href="index_2.html">Home Page V.2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="gallery.html">Our Cars</a></li>
+                        <li><a href="review.html">Reviews</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="dropdown">
+                            <a href="#!"
+                               data-toggle="dropdown"
+                               aria-haspopup="true"
+                               aria-expanded="false">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="service.html">Our Service</a></li>
+                                <li><a href="gallery.html">Car Gallery</a></li>
+                                <li><a href="account.html">My Account</a></li>
+                                <li><a href="reservation.html">Reservation</a></li>
+                                <li class="dropdown">
+                                    <a href="#!"
+                                       data-toggle="dropdown"
+                                       aria-haspopup="true"
+                                       aria-expanded="false">Blogs</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="blog_details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#!"
+                                       data-toggle="dropdown"
+                                       aria-haspopup="true"
+                                       aria-expanded="false">Our Cars</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="car.html">Cars</a></li>
+                                        <li><a href="car_details.html">Car Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="cart.html">Shopping Cart</a></li>
+                                <li><a href="faq.html">F.A.Q.</a></li>
+                                <li><a href="login.html">Login</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#!"
+                               data-toggle="dropdown"
+                               aria-haspopup="true"
+                               aria-expanded="false">Contact Us</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="contact.html">Contact Default</a></li>
+                                <li><a href="contact_wordwide.html">Contact Wordwide</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="booking_car_form">
+                    <h3 class="title_text text-white mb-2">Book A Car</h3>
+                    <p class="mb_15">
+                        Nullam id dolor auctor, dignissim magna eu, mattis ante.
+                        Pellentesque tincidunt, elit a facilisis efficitur.
+                    </p>
+                    <form action="#">
+                        <div class="form_item">
+                            <h4 class="input_title text-white">Pick Up Location</h4>
+                            <div class="position-relative">
+                                <input id="location_one"
+                                       type="text"
+                                       name="location"
+                                       placeholder="City, State or Airport Code" />
+                                <label for="location_one" class="input_icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form_item">
+                            <h4 class="input_title text-white">Pick A Date</h4>
+                            <input type="date" name="date" />
+                        </div>
+                        <button type="submit"
+                                class="custom_btn bg_default_red btn_width text-uppercase">
+                            Book A Car
+                            <img src="~/images/icons/icon_01.png"
+                                 alt="icon_not_found" />
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <section class="slider_section text-white text-center position-relative clearfix">
+            <div class="main_slider clearfix">
+                <div class="item has_overlay d-flex align-items-center"
+                     data-bg-image="data:image/jpeg;base64,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">
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <div class="slider_content text-center">
+                                    <h3 class="text-white text-uppercase"
+                                        data-animation="fadeInUp"
+                                        data-delay=".3s">
+                                        Lamborghini Aventador LP700-4
+                                    </h3>
+                                    <p data-animation="fadeInUp" data-delay=".5s">
+                                        6.6L V8 32V DDI OHV Turbo Diesel, 5-Speed Automatic, Fuel
+                                        Type: Diesel, Color: Black
+                                    </p>
+                                    <div class="abtn_wrap clearfix"
+                                         data-animation="fadeInUp"
+                                         data-delay=".7s">
+                                        <a class="custom_btn bg_default_red btn_width text-uppercase"
+                                           href="#!">
+                                            Book Now
+                                            <img src="~/images/icons/icon_01.png"
+                                                 alt="icon_not_found" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item has_overlay d-flex align-items-center"
+                     data-bg-image="data:image/jpeg;base64,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">
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <div class="slider_content text-center">
+                                    <h3 class="text-white text-uppercase"
+                                        data-animation="fadeInUp"
+                                        data-delay=".3s">
+                                        Lamborghini Aventador LP700-4
+                                    </h3>
+                                    <p data-animation="fadeInUp" data-delay=".5s">
+                                        6.6L V8 32V DDI OHV Turbo Diesel, 5-Speed Automatic, Fuel
+                                        Type: Diesel, Color: Black
+                                    </p>
+                                    <div class="abtn_wrap clearfix"
+                                         data-animation="fadeInUp"
+                                         data-delay=".7s">
+                                        <a class="custom_btn bg_default_red btn_width text-uppercase"
+                                           href="#!">
+                                            Book Now
+                                            <img src="~/images/icons/icon_01.png"
+                                                 alt="icon_not_found" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item has_overlay d-flex align-items-center"
+                     data-bg-image="data:image/jpeg;base64,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">
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <div class="slider_content text-center">
+                                    <h3 class="text-white text-uppercase"
+                                        data-animation="fadeInUp"
+                                        data-delay=".3s">
+                                        Lamborghini Aventador LP700-4
+                                    </h3>
+                                    <p data-animation="fadeInUp" data-delay=".5s">
+                                        6.6L V8 32V DDI OHV Turbo Diesel, 5-Speed Automatic, Fuel
+                                        Type: Diesel, Color: Black
+                                    </p>
+                                    <div class="abtn_wrap clearfix"
+                                         data-animation="fadeInUp"
+                                         data-delay=".7s">
+                                        <a class="custom_btn bg_default_red btn_width text-uppercase"
+                                           href="#!">
+                                            Book Now
+                                            <img src="~/images/icons/icon_01.png"
+                                                 alt="icon_not_found" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel_nav clearfix">
+                <button type="button" class="main_left_arrow">
+                    <i class="fal fa-chevron-left"></i>
+                </button>
+                <button type="button" class="main_right_arrow">
+                    <i class="fal fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+     
+        <section class="feature_section sec_ptb_150 clearfix">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
+                        <div class="section_title mb_60 text-center"
+                             data-aos="fade-up"
+                             data-aos-delay="100">
+                            <h2 class="title_text mb_15"><span>Featured cars</span></h2>
+                            <p class="mb-0">
+                                Mauris cursus quis lorem sed cursus. Aenean aliquam
+                                pellentesque magna, ut dictum ex pellentesque
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="button-group filters-button-group ul_li_center mb_30 clearfix"
+                    data-aos="fade-up"
+                    data-aos-delay="300">
+                    <li><button class="button active" data-filter="*">All</button></li>
+                    <li><button class="button" data-filter=".Sedan">Sedan</button></li>
+                    <li>
+                        <button class="button" data-filter=".Hatcback">Hatcback</button>
+                    </li>
+                    <li>
+                        <button class="button" data-filter=".SUV">SUV</button>
+                    </li>
+                </ul>
+
+               @* Araçların listelenmesi başlangıç*@
+
+                <div class="feature_vehicle_filter element-grid clearfix">
+                    @foreach (var car in Model)
+                    {
+                        <div class="element-item @car.Category" data-category="@car.Category">
+                            <div class="feature_vehicle_item" data-aos="fade-up" data-aos-delay="100">
+                                <h3 class="item_title mb-0">
+                                    <a asp-action="Details" asp-controller="Cars" asp-route-id="@car.Id">@car.Name</a>
+                                </h3>
+                                <div class="item_image position-relative">
+                                    <a class="image_wrap" asp-action="Details" asp-controller="Cars" asp-route-id="@car.Id">
+                                        <img src="@car.ImageUrl" alt="image_not_found" />
+                                    </a>
+                                    <span class="item_price bg_default_blue"> &#8378;@car.PricePerDay/Gün</span>
+                                </div>
+                                <ul class="info_list ul_li_center clearfix">
+                                    <li>@car.Category</li>
+                                    <li>@car.Transmission</li>
+                                    <li>@car.Passengers Kişilik</li>
+                                    <li>@car.FuelType</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    }
+                </div>
+                @* Araçların Listelenmesi bitiş *@
+                <div class="abtn_wrap text-center clearfix"
+                     data-aos="fade-up"
+                     data-aos-delay="100">
+                    <a class="custom_btn bg_default_red btn_width text-uppercase"
+                       href="#!">
+                        Book A Car
+                        <img src="~/images/icons/icon_01.png" alt="icon_not_found" />
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="service_section sec_ptb_150 pb-0 mb_100 text-white clearfix"
+                 data-bg-gradient="linear-gradient(0deg, #0C0C0F, #292D45)">
+            <div class="container">
+                <div class="section_title mb_30 text-center"
+                     data-aos="fade-up"
+                     data-aos-delay="100">
+                    <h2 class="title_text text-white mb-0"><span>Why Usd</span></h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service_primary text-center text-white"
+                             data-aos="fade-up"
+                             data-aos-delay="100">
+                            <div class="item_icon"><i class="far fa-shield-alt"></i></div>
+                            <h3 class="item_title text-white">Secured Payment Guarantee</h3>
+                            <p class="mb-0">
+                                Vestibulum at ultrices elit. Maecenas faucibus vulputate
+                                vestibulum
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service_primary text-center text-white"
+                             data-aos="fade-up"
+                             data-aos-delay="300">
+                            <div class="item_icon"><i class="fal fa-headset"></i></div>
+                            <h3 class="item_title text-white">
+                                Help Center & Support 24/7
+                            </h3>
+                            <p class="mb-0">
+                                Vestibulum at ultrices elit. Maecenas faucibus vulputate
+                                vestibulum
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service_primary text-center text-white"
+                             data-aos="fade-up"
+                             data-aos-delay="500">
+                            <div class="item_icon"><i class="far fa-shield-alt"></i></div>
+                            <h3 class="item_title text-white">
+                                Booking any Class cars
+                            </h3>
+                            <p class="mb-0">
+                                Vestibulum at ultrices elit. Maecenas faucibus vulputate
+                                vestibulum
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service_primary text-center text-white"
+                             data-aos="fade-up"
+                             data-aos-delay="100">
+                            <div class="item_icon"><i class="fas fa-briefcase"></i></div>
+                            <h3 class="item_title text-white">
+                                Corporate and Business Services
+                            </h3>
+                            <p class="mb-0">
+                                Vestibulum at ultrices elit. Maecenas faucibus vulputate
+                                vestibulum
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service_primary text-center text-white"
+                             data-aos="fade-up"
+                             data-aos-delay="300">
+                            <div class="item_icon"><i class="fas fa-user-plus"></i></div>
+                            <h3 class="item_title text-white">Car Sharing Options</h3>
+                            <p class="mb-0">
+                                Vestibulum at ultrices elit. Maecenas faucibus vulputate
+                                vestibulum
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="service_primary text-center text-white"
+                             data-aos="fade-up"
+                             data-aos-delay="500">
+                            <div class="item_icon"><i class="fas fa-gem"></i></div>
+                            <h3 class="item_title text-white">
+                                Limousine and Chauffeur Hire
+                            </h3>
+                            <p class="mb-0">
+                                Vestibulum at ultrices elit. Maecenas faucibus vulputate
+                                vestibulum
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature_carousel_wrap position-relative clearfix">
+                    <div class="slideshow1_slider"
+                         data-aos="fade-up"
+                         data-aos-delay="100">
+                        <div class="item">
+                            <div class="feature_fullimage">
+                                <img src="~/images/feature/img_07.jpg"
+                                     alt="image_not_found" />
+                                <div class="item_content text-white">
+                                    <span class="item_price bg_default_blue">$670/Day</span>
+                                    <h3 class="item_title text-white">
+                                        2017 Shevrolet Corvette C7 Stingray
+                                    </h3>
+                                    <a class="text_btn text-uppercase" href="#!">
+                                        <span>Kook A Car</span>
+                                        <img src="~/images/icons/icon_02.png"
+                                             alt="icon_not_found" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="feature_fullimage">
+                                <img src="~/images/feature/img_07.jpg"
+                                     alt="image_not_found" />
+                                <div class="item_content text-white">
+                                    <span class="item_price bg_default_blue">$670/Day</span>
+                                    <h3 class="item_title text-white">
+                                        2017 Shevrolet Corvette C7 Stingray
+                                    </h3>
+                                    <a class="text_btn text-uppercase" href="#!">
+                                        <span>Kook A Car</span>
+                                        <img src="~/images/icons/icon_02.png"
+                                             alt="icon_not_found" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="feature_fullimage">
+                                <img src="~/images/feature/img_07.jpg"
+                                     alt="image_not_found" />
+                                <div class="item_content text-white">
+                                    <span class="item_price bg_default_blue">$670/Day</span>
+                                    <h3 class="item_title text-white">
+                                        2017 Shevrolet Corvette C7 Stingray
+                                    </h3>
+                                    <a class="text_btn text-uppercase" href="#!">
+                                        <span>Kook A Car</span>
+                                        <img src="~/images/icons/icon_02.png"
+                                             alt="icon_not_found" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel_nav">
+                        <button type="button" class="s1_left_arrow">
+                            <i class="fal fa-angle-left"></i>
+                        </button>
+                        <button type="button" class="s1_right_arrow">
+                            <i class="fal fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog_section sec_ptb_150 clearfix">
+            <div class="container">
+                <div class="row justify-content-lg-between justify-content-center">
+                    <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
+                        <div class="blog_wrap">
+                            <h3 class="wrap_title mb-0"
+                                data-aos="fade-up"
+                                data-aos-delay="100">
+                                From the Blog:
+                            </h3>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="blog_child"
+                                         data-aos="fade-up"
+                                         data-aos-delay="300">
+                                        <a class="item_image" href="blog_details.html">
+                                            <img src="~/images/blog/child_01.jpg"
+                                                 alt="image_not_found" />
+                                        </a>
+                                        <div class="item_content">
+                                            <h4 class="item_title mb-0">
+                                                <a href="blog_details.html">Purus in massa tempor nec…</a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="blog_child"
+                                         data-aos="fade-up"
+                                         data-aos-delay="500">
+                                        <a class="item_image" href="blog_details.html">
+                                            <img src="~/images/blog/child_02.jpg"
+                                                 alt="image_not_found" />
+                                        </a>
+                                        <div class="item_content">
+                                            <h4 class="item_title mb-0">
+                                                <a href="blog_details.html">Vestibulum lobortis aliquam nisl eget</a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
+                        <div class="newsletter_form1">
+                            <h3 class="form_title mb_30"
+                                data-aos="fade-up"
+                                data-aos-delay="100">
+                                Subscribe:
+                            </h3>
+                            <p class="mb_30" data-aos="fade-up" data-aos-delay="300">
+                                Phasellus efficitur dolor sit amet odio scelerisque, et luctus
+                                eros lobortis
+                            </p>
+                            <ul class="primary_social_links ul_li mb_30 clearfix"
+                                data-aos="fade-up"
+                                data-aos-delay="500">
+                                <li>
+                                    <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#!"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#!"><i class="fab fa-twitter"></i></a>
+                                </li>
+                            </ul>
+                            <div class="row" data-aos="fade-up" data-aos-delay="700">
+                                <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                                    <form action="#">
+                                        <div class="form_item mb-0">
+                                            <input type="email"
+                                                   name="email"
+                                                   placeholder="Enter your e-mail" />
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                                    <button type="submit"
+                                            class="custom_btn bg_default_red text-uppercase w-100 d-block">
+                                        Book A Car
+                                        <img src="~/images/icons/icon_01.png"
+                                             alt="icon_not_found" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" data-aos="fade-up" data-aos-delay="100" />
+        <section class="testimonial_section sec_ptb_150 clearfix">
+            <div class="container">
+                <div class="section_title mb_60 text-center"
+                     data-aos="fade-up"
+                     data-aos-delay="100">
+                    <h2 class="title_text mb-0">
+                        <span>What Clients Say about Us</span>
+                    </h2>
+                </div>
+                <div class="testimonial_carousel_wrap position-relative">
+                    <div class="testimonial_carousel"
+                         data-slick='{"dots": false}'
+                         data-aos="fade-up"
+                         data-aos-delay="300">
+                        <div class="item">
+                            <div class="testimonial_item2 text-center">
+                                <p class="mb_30">
+                                    “Ut id lobortis eros, sed finibus dui. Cras eget purus
+                                    lacus. Suspendisse sodales massa quis turpis ultrices
+                                    ultricies. Cras euismod eros at vehicula sagittis.
+                                    Suspendisse condimentum tortor nec enim pellentesque
+                                    feugiat. Nulla tempor urna vitae sapien iaculis, auctor
+                                    condimentum enim auctor”
+                                </p>
+                                <div class="admin_info">
+                                    <div class="admin_image">
+                                        <img src="~/images/meta/img_01.png"
+                                             alt="image_not_found" />
+                                    </div>
+                                    <h4 class="admin_name">Marianna Frazoni</h4>
+                                    <ul class="rating_star ul_li_center clearfix">
+                                        <li class="active"><i class="fas fa-star"></i></li>
+                                        <li class="active"><i class="fas fa-star"></i></li>
+                                        <li class="active"><i class="fas fa-star"></i></li>
+                                        <li class="active"><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial_item2 text-center">
+                                <p class="mb_30">
+                                    “Ut id lobortis eros, sed finibus dui. Cras eget purus
+                                    lacus. Suspendisse sodales massa quis turpis ultrices
+                                    ultricies. Cras euismod eros at vehicula sagittis.
+                                    Suspendisse condimentum tortor nec enim pellentesque
+                                    feugiat. Nulla tempor urna vitae sapien iaculis, auctor
+                                    condimentum enim auctor”
+                                </p>
+                                <div class="admin_info">
+                                    <div class="admin_image">
+                                        <img src="~/images/meta/img_01.png"
+                                             alt="image_not_found" />
+                                    </div>
+                                    <h4 class="admin_name">Marianna Frazoni</h4>
+                                    <ul class="rating_star ul_li_center clearfix">
+                                        <li class="active"><i class="fas fa-star"></i></li>
+                                        <li class="active"><i class="fas fa-star"></i></li>
+                                        <li class="active"><i class="fas fa-star"></i></li>
+                                        <li class="active"><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial_item2 text-center">
+                                <p class="mb_30">
+                                    “Ut id lobortis eros, sed finibus dui. Cras eget purus
+                                    lacus. Suspendisse sodales massa quis turpis ultrices
+                                    ultricies. Cras euismod eros at vehicula sagittis.
+                                    Suspendisse condimentum tortor nec enim pellentesque
+                                    feugiat. Nulla tempor urna vitae sapien iaculis, auctor
+                                    condimentum enim auctor”
+                                </p>
+                                <div class="admin_info">
+                                    <div class="admin_image">
+                                        <img src="~/images/meta/img_01.png"
+                                             alt="image_not_found" />
+                                    </div>
+                                    <h4 class="admin_name">Marianna Frazoni</h4>
+                                    <ul class="rating_star ul_li_center clearfix">
+                                        <li class="active"><i class="fas fa-star"></i></li>
+                                        <li class="active"><i class="fas fa-star"></i></li>
+                                        <li class="active"><i class="fas fa-star"></i></li>
+                                        <li class="active"><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel_nav position_ycenter">
+                        <button type="button" class="ts_left_arrow">
+                            <i class="fal fa-angle-left"></i>
+                        </button>
+                        <button type="button" class="ts_right_arrow">
+                            <i class="fal fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="~/js/jquery-3.5.1.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/aos.js"></script>
+    <script src="~/js/parallaxie.js"></script>
+    <script src="~/js/slick.min.js"></script>
+    <script src="~/js/magnific-popup.min.js"></script>
+    <script src="~/js/nice-select.min.js"></script>
+    <script src="~/js/isotope.pkgd.js"></script>
+    <script src="~/js/imagesloaded.pkgd.min.js"></script>
+    <script src="~/js/masonry.pkgd.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&amp;ver=2.1.6"></script>
+    <script src="~/js/gmaps.min.js"></script>
+    <script src="~/js/jquery-ui.js"></script>
+    <script src="~/js/waypoint.js"></script>
+    <script src="~/js/counterup.min.js"></script>
+    <script src="~/js/validate.js"></script>
+    <script src="~/js/mCustomScrollbar.js"></script>
+    <script src="~/js/custom.js"></script>
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-M3VBLFRFMN"></script>
+    <script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        (window.dataLayer = window.dataLayer || []),
+            gtag("js", new Date()),
+            gtag("config", "G-M3VBLFRFMN");
+    </script>
+</body>
+
+
+
+
+

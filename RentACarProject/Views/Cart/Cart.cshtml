@@ -1,0 +1,345 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<main>
+    <div class="sidebar-menu-wrapper">
+        <div class="mobile_sidebar_menu">
+            <button type="button" class="close_btn">
+                <i class="fal fa-times"></i>
+            </button>
+            <div class="about_content mb_60">
+                <div class="brand_logo mb_15">
+                    <a href="index.html">
+                        <img src="~/images/logo/logo_01_1x.png"
+                             srcset="~/images/logo/logo_01_2x.png 2x"
+                             alt="logo_not_found" />
+                    </a>
+                </div>
+                <p class="mb-0">
+                    Nullam id dolor auctor, dignissim magna eu, mattis ante.
+                    Pellentesque tincidunt, elit a facilisis efficitur, nunc nisi
+                    scelerisque enim, rhoncus malesuada est velit a nulla. Cras porta
+                    mi vitae dolor tristique euismod. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit
+                </p>
+            </div>
+            <div class="menu_list mb_60 clearfix">
+                <h3 class="title_text text-white">Menu List</h3>
+                <ul class="ul_li_block clearfix">
+                    <li class="active dropdown">
+                        <a href="#!"
+                           data-toggle="dropdown"
+                           aria-haspopup="true"
+                           aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index_1.html">Home Page V.1</a></li>
+                            <li><a href="index_2.html">Home Page V.2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Our Cars</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#!"
+                           data-toggle="dropdown"
+                           aria-haspopup="true"
+                           aria-expanded="false">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service.html">Our Service</a></li>
+                            <li><a href="gallery.html">Car Gallery</a></li>
+                            <li><a href="account.html">My Account</a></li>
+                            <li><a href="reservation.html">Reservation</a></li>
+                            <li class="dropdown">
+                                <a href="#!"
+                                   data-toggle="dropdown"
+                                   aria-haspopup="true"
+                                   aria-expanded="false">Blogs</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="blog_details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#!"
+                                   data-toggle="dropdown"
+                                   aria-haspopup="true"
+                                   aria-expanded="false">Our Cars</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="car.html">Cars</a></li>
+                                    <li><a href="car_details.html">Car Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="cart.html">Shopping Cart</a></li>
+                            <li><a href="faq.html">F.A.Q.</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#!"
+                           data-toggle="dropdown"
+                           aria-haspopup="true"
+                           aria-expanded="false">Contact Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="contact.html">Contact Default</a></li>
+                            <li><a href="contact_wordwide.html">Contact Wordwide</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="booking_car_form">
+                <h3 class="title_text text-white mb-2">Book A Car</h3>
+                <p class="mb_15">
+                    Nullam id dolor auctor, dignissim magna eu, mattis ante.
+                    Pellentesque tincidunt, elit a facilisis efficitur.
+                </p>
+                <form action="#">
+                    <div class="form_item">
+                        <h4 class="input_title text-white">Pick Up Location</h4>
+                        <div class="position-relative">
+                            <input id="location_one"
+                                   type="text"
+                                   name="location"
+                                   placeholder="City, State or Airport Code" />
+                            <label for="location_one" class="input_icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form_item">
+                        <h4 class="input_title text-white">Pick A Date</h4>
+                        <input type="date" name="date" />
+                    </div>
+                    <button type="submit"
+                            class="custom_btn bg_default_red btn_width text-uppercase">
+                        Book A Car
+                        <img src="~/images/icons/icon_01.png"
+                             alt="icon_not_found" />
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <section class="breadcrumb_section text-center clearfix">
+        <div class="page_title_area has_overlay d-flex align-items-center clearfix"
+             data-bg-image="~/images/breadcrumb/bg_11.jpg">
+            <div class="overlay"></div>
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <h1 class="page_title text-white mb-0">Shopping Cart</h1>
+            </div>
+        </div>
+        <div class="breadcrumb_nav clearfix" data-bg-color="#F2F2F2">
+            <div class="container">
+                <ul class="ul_li clearfix">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Shopping Cart</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="cart_section sec_ptb_100 clearfix">
+        <div class="container">
+            <div class="row justify-content-lg-between justify-content-md-center justify-content-sm-center">
+                <div class="col-lg-4 col-md-9 col-sm-10 col-xs-12">
+                    <div class="feature_vehicle_item mt-0 ml-0"
+                         data-aos="fade-up"
+                         data-aos-delay="100">
+                        <h3 class="item_title mb-0">
+                            <a href="#!">2015 Shevrolet Corvette Stingray Z51</a>
+                        </h3>
+                        <div class="item_image position-relative">
+                            <a class="image_wrap" href="#!">
+                                <img src="~/images/feature/img_03.jpg"
+                                     alt="image_not_found" />
+                            </a><span class="item_price bg_default_blue">$120/Day</span>
+                        </div>
+                        <ul class="info_list ul_li_center clearfix">
+                            <li>Sports</li>
+                            <li>Auto</li>
+                            <li>2 Passengers</li>
+                            <li>Gasoline</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-9 col-sm-10 col-xs-12">
+                    <div class="cart_info_content">
+                        <div class="row mt__30">
+                            <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12">
+                                <div class="cart_address_item"
+                                     data-aos="fade-up"
+                                     data-aos-delay="100">
+                                    <h4>Pick Up Location:</h4>
+                                    <p class="mb-0">
+                                        <i class="fas fa-map-marker-alt"></i> 86 Albert Road,
+                                        London, N51 4VK
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="cart_address_item"
+                                     data-aos="fade-up"
+                                     data-aos-delay="200">
+                                    <h4>Pick Up Date:</h4>
+                                    <p class="mb-0">
+                                        <i class="fas fa-calendar-alt"></i> 02/12/20
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                                <div class="cart_address_item"
+                                     data-aos="fade-up"
+                                     data-aos-delay="300">
+                                    <h4>Time:</h4>
+                                    <p class="mb-0"><i class="fas fa-clock"></i> 10:30 am</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12">
+                                <div class="cart_address_item"
+                                     data-aos="fade-up"
+                                     data-aos-delay="400">
+                                    <h4>Return Car Location:</h4>
+                                    <p class="mb-0">
+                                        <i class="fas fa-map-marker-alt"></i> Heathrow Airport,
+                                        Nelson Road 30, Terminal 2: TW6 1EW
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="cart_address_item"
+                                     data-aos="fade-up"
+                                     data-aos-delay="500">
+                                    <h4>Return Date:</h4>
+                                    <p class="mb-0">
+                                        <i class="fas fa-calendar-alt"></i> 22/12/20
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                                <div class="cart_address_item"
+                                     data-aos="fade-up"
+                                     data-aos-delay="600">
+                                    <h4>Time:</h4>
+                                    <p class="mb-0"><i class="fas fa-clock"></i> 08:00 am</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr data-aos="fade-up" data-aos-delay="100" />
+                        <div class="cart_offers_include">
+                            <h4 class="title_text mb-0"
+                                data-aos="fade-up"
+                                data-aos-delay="100">
+                                Your Offer Includes:
+                            </h4>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <ul class="cart_info_list ul_li_block clearfix"
+                                        data-aos="fade-up"
+                                        data-aos-delay="300">
+                                        <li>
+                                            <i class="far fa-check-circle"></i> Registration Free/
+                                            Road Tax
+                                        </li>
+                                        <li>
+                                            <i class="far fa-check-circle"></i> Fully
+                                            Comprehensive Insurance
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <ul class="cart_info_list ul_li_block clearfix"
+                                        data-aos="fade-up"
+                                        data-aos-delay="500">
+                                        <li>
+                                            <i class="far fa-check-circle"></i> Excess/Security
+                                            deposit
+                                        </li>
+                                        <li>
+                                            <i class="far fa-check-circle"></i> Breakdown
+                                            Assistance
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <hr data-aos="fade-up" data-aos-delay="100" />
+                        <ul class="cart_info_list2 ul_li_block clearfix"
+                            data-aos="fade-up"
+                            data-aos-delay="100">
+                            <li><strong>Car rental duration:</strong> 20 days</li>
+                            <li><strong>Rental Price:</strong> $400/day</li>
+                            <li><strong>Subtotal:</strong> $4600</li>
+                        </ul>
+                        <hr data-aos="fade-up" data-aos-delay="100" />
+                        <div class="rental_calltoaction">
+                            <form action="#">
+                                <h4 class="title_text"
+                                    data-aos="fade-up"
+                                    data-aos-delay="100">
+                                    Send a car rental details:
+                                </h4>
+                                <div data-aos="fade-up" data-aos-delay="200">
+                                    <a class="register_btn mb_15" href="#!">LogIn or Register</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="form_item"
+                                             data-aos="fade-up"
+                                             data-aos-delay="300">
+                                            <input type="email"
+                                                   name="email"
+                                                   placeholder="E-mail adress" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="form_item"
+                                             data-aos="fade-up"
+                                             data-aos-delay="400">
+                                            <input type="tel"
+                                                   name="phone"
+                                                   placeholder="Phone number" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkbox_input mb-0"
+                                     data-aos="fade-up"
+                                     data-aos-delay="400">
+                                    <label for="payment_checkbox">
+                                        <input id="payment_checkbox" type="checkbox" />I accept
+                                        all information and Payments etc
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <hr data-aos="fade-up" data-aos-delay="100" />
+                        <div class="cart_bottom_content mt__30 clearfix">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <ul class="cart_price_info ul_li_block clearfix"
+                                        data-aos="fade-up"
+                                        data-aos-delay="100">
+                                        <li><span>Tax:</span> $0</li>
+                                        <li><span>Total:</span> $4140</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="abtn_wrap clearfix"
+                                         data-aos="fade-up"
+                                         data-aos-delay="300">
+                                        <a class="custom_btn bg_default_red btn_width text-uppercase"
+                                           href="#!">
+                                            Checkout
+                                            <img src="~/images/icons/icon_01.png"
+                                                 alt="icon_not_found" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
